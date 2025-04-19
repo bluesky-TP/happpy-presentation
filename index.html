@@ -142,6 +142,8 @@
           <p>여러분의 공직 여정이 진정한 행복과 가치로 가득하기를 바랍니다.🌟</p>
           <p>- 박태희 우정인재개발원장 -</p>
           <img src="qrcode.png" alt="QR Code" style="margin-top: 20px; width: 300px;">
+          <button id="back-to-start" style="margin-top: 20px; padding: 10px 20px; font-size: 1rem; background-color: #ffd700; color: #000; border: none; border-radius: 5px; cursor: pointer;">
+    처음으로</button>
         </section>
       </div>
     </div>
@@ -154,6 +156,9 @@
         hash: true,
         transition: 'slide'
       });
+  document.getElementById('back-to-start').addEventListener('click', function() {
+    Reveal.slide(0); // 첫 번째 슬라이드로 이동
+  });
     </script>
   </body>
 </html>
